@@ -1,0 +1,66 @@
+@const
+	#TexCompression
+	OF_COMPRESS_NONE
+	OF_COMPRESS_SRGB
+	OF_COMPRESS_ARB
+	
+@namespace
+	@type ofTexCompression
+	
+	@type ofTextureData
+		bool bAllocated;
+		int glType;
+		int glTypeInternal;
+		int textureTarget;
+		int pixelType;  // MEMO: added this (GL_FLOAT, GL_UNSIGNED_BYTE etc.
+		float tex_t;
+		float tex_u;
+		float tex_w;
+		float tex_h;
+		float width;
+		float height;
+		bool bFlipTexture;
+		unsigned int textureID;
+
+		//Sosolimited: texture compression
+		ofTexCompression compressionType;
+	
+	@class ofTexture : ofBaseDraws 
+		ofTexture()
+		ofTexture(const ofTexture& mom);
+		
+		void allocate(int w, int h, int internalGlDataType);
+		void allocate(int w, int h, int internalGlDataType, bool bUseARBExtention); 
+		void clear();
+
+		void loadData(float * data, int w, int h, int glDataType);
+		void loadData(unsigned char * data, int w, int h, int glDataType);
+
+		void loadScreenData(int x, int y, int w, int h);
+
+		void setAnchorPercent(float xPct, float yPct); 
+		void setAnchorPoint(float x, float y); 
+		void resetAnchor(); 
+
+		void draw(float x, float y, float w, float h);
+		void draw(float x, float y);
+
+		void bind();
+		void unbind();
+		
+		ofPoint getCoordFromPoint(float xPos, float yPos);		
+		ofPoint getCoordFromPercent(float xPts, float yPts);		
+		
+		void setTextureWrap(GLint wrapModeHorizontal, GLint wrapModeVertical);
+		void setTextureMinMagFilter(GLint minFilter, GLint maxFilter);
+
+		void setCompression(ofTexCompression compression);
+
+		bool bAllocated();
+
+		ofTextureData getTextureData();
+
+		float getHeight();
+		float getWidth();
+
+		ofTextureData texData;

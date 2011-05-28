@@ -1,0 +1,40 @@
+
+@namespace 
+	@type ofEventArgs
+	@type ofKeyEventArgs	
+		int key
+	@type ofMouseEventArgs
+		int x
+		int y
+		int button
+		
+	@type ofTouchEventArgs
+		int id
+		int time
+		float x
+		float y
+		int numTouches
+		float width
+		float height
+		float angle
+		float minoraxis
+		float majoraxis
+		float pressure
+		float xspeed
+		float yspeed
+		float xaccel
+		float yaccel
+		
+	@type ofAudioEventArgs
+		int bufferSize
+		int nChannels
+		
+	@type ofResizeEventArgs
+		int width
+		int height
+	
+	@type ofEvent<ofEventArgs>
+	@type ofEvent<ofResizeEventArgs>
+	@type ofEvent<ofKeyEventArgs>
+	@type ofEvent<ofMouseEventArgs>
+	@type ofEvent<ofTouchEventArgs>

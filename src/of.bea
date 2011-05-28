@@ -1,0 +1,29 @@
+@project jof
+@targetNamespace jof
+
+@header 
+	\#include <bea.h>
+	\#include "openf.h"
+	
+@cpp
+	\#include <bea.h>
+	\#include "jof_m.h"
+	\#include "jof.h"
+	
+
+@include "ofConstants.bea"	
+@include "ofMath.bea"
+@include "ofUtils.bea"
+@include "ofTypes.bea"
+@include "ofImage.bea"
+@include "ofTexture.bea"
+@include "ofGraphics.bea"
+@include "ofTrueTypefont.bea"
+@include "ofBaseApp.bea"
+@include "ofAppBaseWindow.bea"
+@include "ofAppRunner.bea"
+@include "ofSoundPlayer.bea"
+@include "ofSoundStream.bea"
+@include "ofVideoPlayer.bea"
+
+	

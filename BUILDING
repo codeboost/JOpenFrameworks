@@ -1,0 +1,12 @@
+
+Building JOpenFrameworks
+
+Checkout google v8 into deps/v8:
+
+	svn checkout http://v8.googlecode.com/svn/trunk/ deps/v8
+
+Build v8 (For options, see: http://code.google.com/apis/v8/build.html):
+	cd deps/v8
+	scons
+
+Build JOpenFrameworks.

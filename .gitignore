@@ -1,0 +1,49 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.dll
+ipch/
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
+deps/v8/
+
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
+
+
+#Subversion files
+.svn
+
+# Office Temp Files
+~$*
+
+#SVN Ignore pattern
+#*.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo *.rej *~ #*# .#* .*.swp .DS_Store .git* *.ncb *.idb *.pdb *.obj *.exe *.user *.aps *.pch *.vspscc *.vssscc *_i.c *_p.c *.ncb *.suo *.tlb *.tlh *.bak *.[Cc]ache *.ilk *.log *.lib *.sbr *.sdf *.dll ipch/ obj/ [Bb]in [Dd]ebug*/ [Rr]elease*/ *.DS_Store [Tt]humbs.db

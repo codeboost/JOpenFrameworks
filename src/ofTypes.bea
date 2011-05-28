@@ -1,0 +1,90 @@
+@namespace bea
+	@class Indexable
+		Indexable()
+		void setPtr(void* ptr, int size, int type)
+			@call
+				args.This()->SetIndexedPropertiesToExternalArrayData(ptr, (v8::ExternalArrayType)type, size);
+		@destructor
+			delete _this;			
+	
+	@class BeaBuffer
+		BeaBuffer(int size, int type)
+		@postAllocator
+			args.This()->SetIndexedPropertiesToExternalArrayData(_this->ptr(), (v8::ExternalArrayType)_this->type(), _this->size());
+		void* ptr()
+		int size()
+		@accessor length int
+			@get _this->size()
+			@set
+		
+@namespace
+	@type ofPoint
+		float x
+		float y
+		float z
+		
+	@type ofRectangle
+		float x
+		float y
+		float width
+		float height
+	
+	@type ofColor 
+		float r
+		float g
+		float b
+	
+	@type ofStyle
+		ofColor color;
+		int polyMode;
+		int rectMode;
+		bool bFill;
+		bool blending;
+		bool smoothing;
+		int circleResolution;
+		float lineWidth;	
+		
+	@type GLint
+	@type GLfloat
+	@type ofTexCompression castfrom int
+	@type string
+	@type vector<ofPoint>
+	@type unsigned int castfrom int
+	@type unsigned long castfrom unsigned int
+	
+	@type unsigned char* @manual
+	@type float* @manual
+
+	
+	@class ofBaseDraws
+		ofBaseDraws()
+		virtual void draw(float x,float y) = 0
+		virtual void draw(float x,float y,float w, float h) = 0
+		virtual float getHeight() = 0
+		virtual float getWidth() = 0
+		virtual void setAnchorPercent(float xPct, float yPct)
+		virtual void setAnchorPoint(float x, float y)
+		virtual void resetAnchor()
+		
+	@class ofBaseUpdates
+		ofBaseUpdates()
+		virtual void update() = 0
+		
+
+	@class ofBaseHasTexture
+		ofBaseHasTexture()
+		virtual ofTexture & getTextureReference()=0;
+		virtual void setUseTexture(bool bUseTex)=0;
+	
+	@class ofBaseHasPixels
+		ofBaseHasPixels()
+		virtual ~ofBaseHasPixels(){}
+		virtual unsigned char * getPixels()=0;
+		
+	@class ofBaseImage : public ofBaseDraws, public ofBaseHasTexture, public ofBaseHasPixels
+		ofBaseImage()
+	
+	@class ofBaseVideo : public ofBaseImage, public ofBaseUpdates
+		ofBaseVideo()
+		virtual bool isFrameNew()=0;
+		virtual void close()=0;	
