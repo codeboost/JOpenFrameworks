@@ -1,0 +1,3 @@
+[submodule "deps/bea"]
+	path = deps/bea
+	url = git@github.com:codeboost/beaTools.git
