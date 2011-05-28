@@ -1,5 +1,5 @@
 
-require 'underscore.js'
+require 'ofCommon.js'
 
 class imageLoaderExample
 	constructor: ->
@@ -21,6 +21,7 @@ class imageLoaderExample
 		@transparency.loadImage "images/transparency.png"
 		@bikeIcon.loadImage "images/bike_icon.png"
 		@bikeIcon.setImageType OF_IMAGE_GRAYSCALE
+		@oIndex = new Indexable()
 		
 	update: ->
 		ofBackground 255, 255, 255
@@ -44,17 +45,14 @@ class imageLoaderExample
 		
 		w = @bikeIcon.width
 		h = @bikeIcon.height
-		
-		#log "w = #{w}, h = #{h}"
-		
-		pixels = new Indexable @bikeIcon.getPixels(), w * h * @bikeIcon.bpp
+		#pixels = new Indexable @bikeIcon.getPixels(), w * h * @bikeIcon.bpp
+		pixels = @oIndex.setPtr @bikeIcon.getPixels(), w * h * @bikeIcon.bpp, kExternalUnsignedByteArray
 		i = 0
 		while i++ < w
 			j = 0
 			while j++ < h
 				value = pixels[j * w + i]
 				pct = 1 - (value / 255.0)
-				#log "pct = #{pct}, value = #{value}"
 				ofCircle i * 10, 500 + j * 10, 1 + 5 * pct
 
 		ofSetColor(0xFFFFFF);

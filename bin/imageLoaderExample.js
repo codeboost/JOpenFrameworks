@@ -1,6 +1,6 @@
 (function() {
   var imageLoaderExample, myapp, window;
-  require('underscore.js');
+  require('ofCommon.js');
   imageLoaderExample = (function() {
     function imageLoaderExample() {
       this.bikers = new ofImage;
@@ -20,7 +20,8 @@
       this.tdfSmall.setImageType(OF_IMAGE_GRAYSCALE);
       this.transparency.loadImage("images/transparency.png");
       this.bikeIcon.loadImage("images/bike_icon.png");
-      return this.bikeIcon.setImageType(OF_IMAGE_GRAYSCALE);
+      this.bikeIcon.setImageType(OF_IMAGE_GRAYSCALE);
+      return this.oIndex = new Indexable();
     };
     imageLoaderExample.prototype.update = function() {
       return ofBackground(255, 255, 255);
@@ -40,7 +41,7 @@
       ofSetColor(0x000000);
       w = this.bikeIcon.width;
       h = this.bikeIcon.height;
-      pixels = new Indexable(this.bikeIcon.getPixels(), w * h * this.bikeIcon.bpp);
+      pixels = this.oIndex.setPtr(this.bikeIcon.getPixels(), w * h * this.bikeIcon.bpp, kExternalUnsignedByteArray);
       i = 0;
       while (i++ < w) {
         j = 0;

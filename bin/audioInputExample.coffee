@@ -23,14 +23,20 @@ class AudioInputExample
 		ofRect 100,100,256,200
 		ofSetColor 0xFFFFFF
 		
-		ofLine(100 + i, 200, 100 + i, 200 + @left[i] * 100.0) for i in [0..255]
+		i = 0
+		while i < 256
+			ofLine(100 + i, 200, 100 + i, 200 + @left[i] * 100.0) 
+			i++
 		
 		#draw the right:
 		ofSetColor 0x333333
 		ofRect 600,100,256,200
 		ofSetColor 0xFFFFFF
 		
-		ofLine(600 + i, 200, 600 + i, 200 + @right[i] * 100.0 ) for i in [0..255]
+		i = 0
+		while i < 256
+			ofLine(600 + i, 200, 600 + i, 200 + @right[i] * 100.0 )
+			i++
 
 		ofSetColor 0x333333
 		@drawCounter++
@@ -40,13 +46,11 @@ class AudioInputExample
 		yield()
 		
 	audioReceived: (pinput, bufferSize, nChannels) ->
-		#make buffer indexable; 7 = kFloatArray
-		input = @oIndex.setPtr pinput, bufferSize, 7
-		
+		input = @oIndex.setPtr pinput, bufferSize * nChannels, kExternalFloatArray
 		for i in [0..bufferSize - 1]
 			@left[i] = input[i * 2] 
 			@right[i] = input[i * 2 + 1]
-		
+			
 		@bufferCounter++
 
 ofRunApp _.extend new ofBaseApp, new AudioInputExample

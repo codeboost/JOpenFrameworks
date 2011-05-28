@@ -3,7 +3,9 @@ JOpenFrameworks = OpenFrameworks + V8 = Javascript open frameworks
 What is JOpenFrameworks ?
 
 	JOpenFrameworks allows you to write and execute programs using the OpenFrameworks API in Javascript.
-	The "glue" code between OpenFrameworks and V8 was generated with the Bea C++ to Javascript converter.
+	The "glue" code between OpenFrameworks and V8 was generated with the Bea C++ to Javascript converter: 
+	https://github.com/codeboost/bea
+	
 	It took me less than 2 days to do the port and I wrote about 20 lines of additional C++ code for it all to work.
 	This speaks a lot about the power of the Bea converter.
 
@@ -12,7 +14,8 @@ Why ?
 	Javascript is the most popular programming language out there: makes OF accessible to a world of non-C++ programmers/artists
 	No need to set up the C++ project, programming environment
 	No compile required - write the script and execute it
-
+	Easy to share and publish script source code on the web 
+	
 What is supported?
 
 	All the "standard" OpenFrameworks API is supported, except ofEvent.
@@ -62,10 +65,12 @@ What are the API differences ?
 		
 		audioReceived: function(pbuffer, bufferSize, nChannels){
 			//Make the pointer indexable
-			var buffer = this.oIndex.setPtr(pbuffer, bufferSize);
+			var buffer = this.oIndex.setPtr(pbuffer, bufferSize * nChannels);
 			buffer[0] = 0;
 		}
-
+		
+	Note that the size parameter for setPtr() must be the size in bytes of the buffer (not the number of elements).
+	
 	See audioInputExample.js and audioOutputExample.js to see how this works.
 	
 	~The Indexable and BeaBuffer functionality might change in future releases. It was a quick hack I've put together to make it all work, but I'm sure something 

@@ -22,14 +22,18 @@
       ofSetColor(0x333333);
       ofRect(100, 100, 256, 200);
       ofSetColor(0xFFFFFF);
-      for (i = 0; i <= 255; i++) {
+      i = 0;
+      while (i < 256) {
         ofLine(100 + i, 200, 100 + i, 200 + this.left[i] * 100.0);
+        i++;
       }
       ofSetColor(0x333333);
       ofRect(600, 100, 256, 200);
       ofSetColor(0xFFFFFF);
-      for (i = 0; i <= 255; i++) {
+      i = 0;
+      while (i < 256) {
         ofLine(600 + i, 200, 600 + i, 200 + this.right[i] * 100.0);
+        i++;
       }
       ofSetColor(0x333333);
       this.drawCounter++;
@@ -39,7 +43,7 @@
     };
     AudioInputExample.prototype.audioReceived = function(pinput, bufferSize, nChannels) {
       var i, input, _ref;
-      input = this.oIndex.setPtr(pinput, bufferSize, 7);
+      input = this.oIndex.setPtr(pinput, bufferSize * nChannels, kExternalFloatArray);
       for (i = 0, _ref = bufferSize - 1; (0 <= _ref ? i <= _ref : i >= _ref); (0 <= _ref ? i += 1 : i -= 1)) {
         this.left[i] = input[i * 2];
         this.right[i] = input[i * 2 + 1];

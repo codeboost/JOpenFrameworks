@@ -20,7 +20,7 @@ void unused(){
 
 void log(const char* msg){
 	std::cout << msg << std::endl;
-	system("PAUSE");
+	exit(-1);
 }
 
 void yield(int timeout){
