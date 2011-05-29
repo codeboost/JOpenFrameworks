@@ -1,8 +1,6 @@
 #include <bea.h>
 #include "jopengl.h"
 #include <vector>
-#include <windows.h>
-#include <gl/gl.h>
 using namespace bea;
 namespace bea {
 	

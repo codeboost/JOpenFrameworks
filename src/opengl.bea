@@ -6,8 +6,7 @@
 	\#include <bea.h>
 	\#include "jopengl.h"
 	\#include <vector>
-	\#include <windows.h>
-	\#include <gl/gl.h>
+	\#include "openf.h"
 	\#include "jopengl_m.h"
 
 @include "glConstants.bea"

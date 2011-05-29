@@ -601,60 +601,8 @@
 	GL_T4F_C4F_N3F_V4F                
 
 
-	GL_EXT_vertex_array               
 	GL_EXT_bgra                       
 	GL_EXT_paletted_texture           
-	GL_WIN_swap_hint                  
-	GL_WIN_draw_range_elements        
-	#GL_WIN_phong_shading           
-	#GL_WIN_specular_fog            
-
-
-	GL_VERTEX_ARRAY_EXT               
-	GL_NORMAL_ARRAY_EXT               
-	GL_COLOR_ARRAY_EXT                
-	GL_INDEX_ARRAY_EXT                
-	GL_TEXTURE_COORD_ARRAY_EXT        
-	GL_EDGE_FLAG_ARRAY_EXT            
-	GL_VERTEX_ARRAY_SIZE_EXT          
-	GL_VERTEX_ARRAY_TYPE_EXT          
-	GL_VERTEX_ARRAY_STRIDE_EXT        
-	GL_VERTEX_ARRAY_COUNT_EXT         
-	GL_NORMAL_ARRAY_TYPE_EXT          
-	GL_NORMAL_ARRAY_STRIDE_EXT        
-	GL_NORMAL_ARRAY_COUNT_EXT         
-	GL_COLOR_ARRAY_SIZE_EXT           
-	GL_COLOR_ARRAY_TYPE_EXT           
-	GL_COLOR_ARRAY_STRIDE_EXT         
-	GL_COLOR_ARRAY_COUNT_EXT          
-	GL_INDEX_ARRAY_TYPE_EXT           
-	GL_INDEX_ARRAY_STRIDE_EXT         
-	GL_INDEX_ARRAY_COUNT_EXT          
-	GL_TEXTURE_COORD_ARRAY_SIZE_EXT   
-	GL_TEXTURE_COORD_ARRAY_TYPE_EXT   
-	GL_TEXTURE_COORD_ARRAY_STRIDE_EXT 
-	GL_TEXTURE_COORD_ARRAY_COUNT_EXT  
-	GL_EDGE_FLAG_ARRAY_STRIDE_EXT     
-	GL_EDGE_FLAG_ARRAY_COUNT_EXT      
-	GL_VERTEX_ARRAY_POINTER_EXT       
-	GL_NORMAL_ARRAY_POINTER_EXT       
-	GL_COLOR_ARRAY_POINTER_EXT        
-	GL_INDEX_ARRAY_POINTER_EXT        
-	GL_TEXTURE_COORD_ARRAY_POINTER_EXT
-	GL_EDGE_FLAG_ARRAY_POINTER_EXT    
-	GL_DOUBLE_EXT                     
-
-
-	GL_BGR_EXT                        
-	GL_BGRA_EXT                       
-	GL_COLOR_TABLE_FORMAT_EXT         
-	GL_COLOR_TABLE_WIDTH_EXT          
-	GL_COLOR_TABLE_RED_SIZE_EXT       
-	GL_COLOR_TABLE_GREEN_SIZE_EXT     
-	GL_COLOR_TABLE_BLUE_SIZE_EXT      
-	GL_COLOR_TABLE_ALPHA_SIZE_EXT     
-	GL_COLOR_TABLE_LUMINANCE_SIZE_EXT 
-	GL_COLOR_TABLE_INTENSITY_SIZE_EXT 
 
 	GL_COLOR_INDEX1_EXT               
 	GL_COLOR_INDEX2_EXT               
@@ -663,11 +611,3 @@
 	GL_COLOR_INDEX12_EXT              
 	GL_COLOR_INDEX16_EXT              
 
-
-	GL_MAX_ELEMENTS_VERTICES_WIN      
-	GL_MAX_ELEMENTS_INDICES_WIN       
-
-	GL_PHONG_WIN                      
-	GL_PHONG_HINT_WIN                 
-
-	GL_FOG_SPECULAR_TEXTURE_WIN       
