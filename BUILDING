@@ -1,12 +1,35 @@
-
 Building JOpenFrameworks
 
-Checkout google v8 into deps/v8:
+Pre-requisites:
+You need git and svn installed. 
+In Windows, you need Visual Studio 2010
+In Mac you need XCode
 
+
+First we need to check out the sources and build v8:
+
+1. Download and extract OpenFrameworks. Extract it to 'of' directory
+
+2. Go to apps/examples and create the jof directory:
+	cd of/apps/examples
+	mkdir jof
+	cd jof
+
+3. Checkout the source code
+	git clone --recursive git@github.com:codeboost/JOpenFrameworks.git .
+	
+4. Checkout google v8 into deps/v8:
+	mkdir deps/v8
 	svn checkout http://v8.googlecode.com/svn/trunk/ deps/v8
-
-Build v8 (For options, see: http://code.google.com/apis/v8/build.html):
+	
+5. Build v8 (For options, see: http://code.google.com/apis/v8/build.html):
 	cd deps/v8
-	scons
+	scons mode=release library=shared
 
-Build JOpenFrameworks.
+Now depending on your platform, let's build it
+
+Windows (Visual Studio 2010):
+Open the solution jof.sln and hit F7 to build.
+
+
+
