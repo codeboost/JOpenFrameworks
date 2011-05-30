@@ -27,19 +27,13 @@ First we need to check out the sources and build v8:
 	scons mode=release library=shared
 
 6. On Mac / Linux, install the boost libraries (I don't like this dependency, because only boost::filesystem::path is used)	:
-	Mac:
-	sudo port install boost
-	Linux:
-	sudo apt-get install boost
+See www.boost.org for installation instructions for your platform.
 
-See www.boost.org for windows installation instructions
-	
-	
-
-Now depending on your platform, let's build it
+7. Now depending on your platform, let's build it:
 
 Windows (Visual Studio 2010):
 Open the solution jof.sln and hit F7 to build.
 
-
+MacOS (XCode):
+Open the xcode project and build. 
 
