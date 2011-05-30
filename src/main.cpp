@@ -5,6 +5,7 @@
 #include "jopengl.h"
 
 #include "beascript.h"
+#include <stdlib.h>
 
 void unused(){
 

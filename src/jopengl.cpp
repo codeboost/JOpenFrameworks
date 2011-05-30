@@ -1,7 +1,7 @@
 #include <bea.h>
 #include "jopengl.h"
 #include <vector>
-#include <OpenGL/gl.h>
+#include "openf.h"
 #include "jopengl_m.h"
 namespace bea {
 	
