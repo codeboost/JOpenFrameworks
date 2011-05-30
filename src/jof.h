@@ -2,6 +2,7 @@
 #define JOF_H
 #include <bea.h>
 #include "openf.h"
+
 namespace jof {
 	class JofMath {
 		protected:
