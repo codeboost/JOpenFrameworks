@@ -228,6 +228,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -265,16 +267,15 @@
 							<array>
 								<string>E4B69B4A0A3A1720003C02F2</string>
 								<string>E4B69E1C0A3A1BDC003C02F2</string>
-								<string>E45BE0360E8CC5DE009D7055</string>
-								<string>E45BEED60E8CCB34009D7055</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>7FDB71A61393E60C008F90C2</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>25</integer>
-									<integer>24</integer>
+									<integer>22</integer>
+									<integer>21</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -308,14 +309,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>beascript.h</string>
+								<string>main.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -323,14 +322,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>beascript.h</string>
+										<string>main.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>7FCB45841392F561006EA497</string>
+										<string>7FDB71B71393EB8A008F90C2</string>
 										<key>history</key>
 										<array>
-											<string>7FCB451413925197006EA497</string>
+											<string>7FDB719B1393E378008F90C2</string>
+											<string>7FDB719C1393E378008F90C2</string>
+										</array>
+										<key>prevStack</key>
+										<array>
+											<string>7FDB719D1393E378008F90C2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -388,9 +392,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>7FCB44F713924152006EA497</string>
+				<string>7FDB719F1393E378008F90C2</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>7FCB44F813924152006EA497</string>
+				<string>7FDB71A01393E378008F90C2</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -524,9 +528,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>7FCB45641392EC35006EA497</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>7FCB451913925197006EA497</string>
 		<string>/Users/florinbraghis/Sites/of/apps/examples/jof/jof.xcodeproj</string>
 	</array>
@@ -552,7 +553,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>beascript.h</string>
+								<string>main.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -610,7 +611,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>7FCB451913925197006EA497</string>
-				<string>7FCB451A13925197006EA497</string>
+				<string>7FDB71A11393E378008F90C2</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -621,7 +622,7 @@
 			<key>WindowToolGUID</key>
 			<string>7FCB451913925197006EA497</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

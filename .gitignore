@@ -46,7 +46,14 @@ _ReSharper*/
 ~$*
 
 #XCode stuff
+*.swp
+*~.nib
+*.app/
 build/
+
+*.pbxuser
+*.perspective
+*.perspectivev3
 
 #SVN Ignore pattern
 #*.o *.lo *.la *.al .libs *.so *.so.[0-9]* *.a *.pyc *.pyo *.rej *~ #*# .#* .*.swp .DS_Store .git* *.ncb *.idb *.pdb *.obj *.exe *.user *.aps *.pch *.vspscc *.vssscc *_i.c *_p.c *.ncb *.suo *.tlb *.tlh *.bak *.[Cc]ache *.ilk *.log *.lib *.sbr *.sdf *.dll ipch/ obj/ [Bb]in [Dd]ebug*/ [Rr]elease*/ *.DS_Store [Tt]humbs.db

@@ -66,15 +66,7 @@
 			sepNavWindowFrame = "{{15, 73}, {1346, 800}}";
 		};
 	};
-	7FCB451413925197006EA497 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: boost/filesystem/path.hpp: No such file or directory";
-		fRef = 7FCB450B1392418B006EA497 /* beascript.h */;
-		rLen = 1;
-		rLoc = 4;
-		rType = 1;
-	};
-	7FCB45841392F561006EA497 /* PBXTextBookmark */ = {
+	7FDB719B1393E378008F90C2 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 7FCB450B1392418B006EA497 /* beascript.h */;
 		name = "beascript.h: 9";
@@ -84,8 +76,36 @@
 		vrLen = 1076;
 		vrLoc = 0;
 	};
+	7FDB719C1393E378008F90C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Compiling /Users/florinbraghis/Sites/of/apps/examples/jof/src/main.cpp";
+		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
+		rLen = 0;
+		rLoc = 0;
+		rType = 1;
+	};
+	7FDB719D1393E378008F90C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7FCB450B1392418B006EA497 /* beascript.h */;
+		name = "beascript.h: 9";
+		rLen = 0;
+		rLoc = 135;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 0;
+	};
+	7FDB71B71393EB8A008F90C2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */;
+		name = "main.cpp: 9";
+		rLen = 0;
+		rLoc = 147;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 0;
+	};
 	E4B69B4C0A3A1720003C02F2 /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 7FCB44D713924151006EA497 /* jof */;
 		activeTarget = E4B69B5A0A3A1756003C02F2 /* jof */;
 		addToTargets = (
@@ -127,7 +147,7 @@
 					20,
 					900,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -150,7 +170,7 @@
 					860,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -164,12 +184,14 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 328352081;
-			PBXWorkspaceStateSaveDate = 328352081;
+			PBXPerProjectTemplateStateSaveDate = 328459039;
+			PBXWorkspaceStateSaveDate = 328459039;
 		};
 		perUserProjectItems = {
-			7FCB451413925197006EA497 /* PBXTextBookmark */ = 7FCB451413925197006EA497 /* PBXTextBookmark */;
-			7FCB45841392F561006EA497 /* PBXTextBookmark */ = 7FCB45841392F561006EA497 /* PBXTextBookmark */;
+			7FDB719B1393E378008F90C2 /* PBXTextBookmark */ = 7FDB719B1393E378008F90C2 /* PBXTextBookmark */;
+			7FDB719C1393E378008F90C2 /* PBXTextBookmark */ = 7FDB719C1393E378008F90C2 /* PBXTextBookmark */;
+			7FDB719D1393E378008F90C2 /* PBXTextBookmark */ = 7FDB719D1393E378008F90C2 /* PBXTextBookmark */;
+			7FDB71B71393EB8A008F90C2 /* PBXTextBookmark */ = 7FDB71B71393EB8A008F90C2 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 7FCB44FA13924152006EA497 /* Source Control */;
 		userBuildSettings = {
@@ -180,5 +202,12 @@
 		executables = (
 			7FCB44D713924151006EA497 /* jof */,
 		);
+	};
+	E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {998, 840}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 399}";
+		};
 	};
 }
