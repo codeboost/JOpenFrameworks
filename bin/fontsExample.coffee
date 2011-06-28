@@ -1,6 +1,6 @@
 
-
-require 'underscore.js'
+oflib = require 'lib/of'
+oflib._.extend this, oflib
 
 class MyApp
 	constructor: ->

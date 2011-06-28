@@ -52,10 +52,12 @@ int main(int argc, char** argv){
 	bea::BeaScript<of::Project> Sl;
 	bea::BeaContext::setLogCallback(log);
 	bea::BeaContext::setYieldCallback(yield);
+	bea::BeaContext::setCommandLine(argc, argv);
 
-	Sl.init();
-	if (!Sl.loadScript(argv[1]))
-		std::cout << "Error: " << Sl.getLastError() << std::endl;
+	if (!Sl.loadScript(argv[1])){
+		std::cout << "Unable to load " << argv[1] << std::endl; 
+	}
 
+	std::cout << "." << std::endl;
 	return 0; 
 }

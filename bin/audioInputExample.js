@@ -2,8 +2,9 @@
   /*
   	Audio input example for JOpenFrameworks
   	by florin.braghis@gmail.com
-  */  var AudioInputExample, window;
-  require('ofCommon.js');
+  */  var AudioInputExample, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   window = new ofAppGlutWindow;
   ofSetupOpenGL(window, 1024, 768, OF_WINDOW);
   AudioInputExample = (function() {

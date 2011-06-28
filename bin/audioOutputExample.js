@@ -2,8 +2,9 @@
   /*
   	Audio output example.
   	by florin.braghis@gmail.com
-  */  var AudioOutputExample, g_App, window;
-  require('ofCommon.js');
+  */  var AudioOutputExample, g_App, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   window = new ofAppGlutWindow;
   ofSetupOpenGL(window, 1024, 768, OF_WINDOW);
   g_App = new ofBaseApp;

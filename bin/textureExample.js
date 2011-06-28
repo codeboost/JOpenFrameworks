@@ -2,8 +2,9 @@
   /*
   	Texture example for JOpenFrameworks
   	by florin.braghis@gmail.com
-  */  var TextureExample, window;
-  require('ofCommon.js');
+  */  var TextureExample, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   window = new ofAppGlutWindow;
   ofSetupOpenGL(window, 1024, 768, OF_WINDOW);
   TextureExample = (function() {

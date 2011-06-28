@@ -1,5 +1,6 @@
 
-require 'ofCommon.js'
+oflib = require 'lib/of'
+oflib._.extend this, oflib
 
 class imageLoaderExample
 	constructor: ->

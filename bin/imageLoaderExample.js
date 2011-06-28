@@ -1,6 +1,7 @@
 (function() {
-  var imageLoaderExample, myapp, window;
-  require('ofCommon.js');
+  var imageLoaderExample, myapp, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   imageLoaderExample = (function() {
     function imageLoaderExample() {
       this.bikers = new ofImage;

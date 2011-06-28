@@ -4,7 +4,8 @@
 	by florin.braghis@gmail.com
 ###
 
-require 'ofCommon.js'
+oflib = require 'lib/of'
+oflib._.extend this, oflib
 
 window = new ofAppGlutWindow
 ofSetupOpenGL window, 1024, 768, OF_WINDOW

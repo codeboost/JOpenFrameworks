@@ -8,13 +8,9 @@
 */
 
 
-require('underscore.js')
+of = require('lib/of')
+of._.extend(this, of);
 
-//Add the required 'modules' to the global namespace
-_.extend(this, ofAppRunner)
-_.extend(this, ofGraphics)
-_.extend(this, ofMath)
-_.extend(this, OpenGL)
 
 //And here we go
 window = new ofAppGlutWindow

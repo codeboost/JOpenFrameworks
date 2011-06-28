@@ -1,6 +1,7 @@
 (function() {
-  var MyApp, myapp, window;
-  require('underscore.js');
+  var MyApp, myapp, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   MyApp = (function() {
     function MyApp() {
       this.franklinBook = new ofTrueTypeFont;

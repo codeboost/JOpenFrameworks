@@ -1,4 +1,4 @@
-require('underscore.js')
+_ = require('lib/underscore');
 
 /*
 	JOpenFrameworks - graphicsExample
@@ -7,6 +7,7 @@ require('underscore.js')
 	This is the port of the C++ graphicsExample project from OpenFrameworks library.
 
 */
+
 
 _.extend(this, ofAppRunner)
 _.extend(this, ofGraphics)

@@ -2,8 +2,9 @@
   /*
   	MoviePlayer example for JOpenFrameworks
   	by florin.braghis@gmail.com
-  */  var MoviePlayerExample, g_App, window;
-  require('ofCommon.js');
+  */  var MoviePlayerExample, g_App, oflib, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   window = new ofAppGlutWindow;
   ofSetupOpenGL(window, 1024, 768, OF_WINDOW);
   MoviePlayerExample = (function() {

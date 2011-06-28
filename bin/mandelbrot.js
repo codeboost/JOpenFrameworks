@@ -1,6 +1,7 @@
 (function() {
-  var ComplexNumber, ComplexPlane, Mandelbrot, bailout, black, colors, escape_radius, getCoordinate, h, i, log_2, w, window;
-  require("ofCommon.js");
+  var ComplexNumber, ComplexPlane, Mandelbrot, bailout, black, colors, escape_radius, getCoordinate, h, i, log_2, oflib, w, window;
+  oflib = require('lib/of');
+  oflib._.extend(this, oflib);
   ComplexNumber = (function() {
     function ComplexNumber(real, imag) {
       this.real = real;
@@ -85,14 +86,14 @@
     ComplexPlane.prototype.forEachPixel = function(fn) {
       var x, y, _ref, _results;
       _results = [];
-      for (y = 1, _ref = this.screenHeight; 1 <= _ref ? y <= _ref : y >= _ref; 1 <= _ref ? y++ : y--) {
+      for (y = 1, _ref = this.screenHeight; (1 <= _ref ? y <= _ref : y >= _ref); (1 <= _ref ? y += 1 : y -= 1)) {
         _results.push((function() {
-          var _ref2, _results2;
-          _results2 = [];
-          for (x = 1, _ref2 = this.screenWidth; 1 <= _ref2 ? x <= _ref2 : x >= _ref2; 1 <= _ref2 ? x++ : x--) {
-            _results2.push(fn.call(this, x, y, this.getComplexNumberForScreenCoordinates(x, y)));
+          var _ref, _results;
+          _results = [];
+          for (x = 1, _ref = this.screenWidth; (1 <= _ref ? x <= _ref : x >= _ref); (1 <= _ref ? x += 1 : x -= 1)) {
+            _results.push(fn.call(this, x, y, this.getComplexNumberForScreenCoordinates(x, y)));
           }
-          return _results2;
+          return _results;
         }).call(this));
       }
       return _results;

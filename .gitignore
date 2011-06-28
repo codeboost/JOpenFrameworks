@@ -25,6 +25,7 @@
 *.sbr
 *.sdf
 *.dll
+*.opensdf
 ipch/
 obj/
 #[Bb]in
